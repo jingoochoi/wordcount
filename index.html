@@ -49,7 +49,7 @@ function wordFrequency(text) {
     .map(removeEd)            // 단어 끝에 ed 제거
     .map(removeIng)    // 과거 시제를 현재 시제로 변환
     .map(removeS)    // 과거 시제를 현재 시제로 변환
-    .filter(word => {!excludeWords.includes(word);word.length>3;}); // 불필요 단어 제거
+    .filter(word => !excludeWords.includes(word)&&word.length>3); // 불필요 단어 제거
     
 
   const frequency = {};

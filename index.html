@@ -20,7 +20,7 @@ const excludeWords = ["be", "is", "are", "was", "were", "been", "being", "am", "
 // 단어 끝에 ed 제거하는 함수
 function removeEd(word) {
   if (word.endsWith("ed")) {
-    return word.slice(0, -2);
+    return word.slice(0, -1);
   }
   return word;
 }
